@@ -2,7 +2,7 @@ import React from 'react';
 import './product.css';
 import { FaCartArrowDown } from 'react-icons/fa';
 
-const Product = ({ product }) => {
+const Product = ({ product, addedCard }) => {
     const {name, value, img} = product;
   return (
     <div className='card'>
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
             <h4>Value: {value}</h4>
         </div>
 
-        <button className='add-btn'>
+        <button className='add-btn' onClick={() => addedCard(product)}>
             Add Card <FaCartArrowDown />
         </button>
     </div>
