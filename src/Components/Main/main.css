@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+}
+.logo {
+  text-align: center;
+  font-family: Geneva, Tahoma, sans-serif;
+  padding: 2rem 0 3.5rem;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Breed",
+        "img": "./food_store_pic/breed.jpg",
+        "value": "$12"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "img": "./food_store_pic/burger.jpg",
+        "value": "$20"
+    },
+    {
+        "id": 3,
+        "name": "Coffee",
+        "img": "./food_store_pic/coffee.jpg",
+        "value": "$5"
+    },
+    {
+        "id": 4,
+        "name": "CupCake",
+        "img": "./food_store_pic/cupcake.jpg",
+        "value": "$8"
+    },
+    {
+        "id": 5,
+        "name": "Dessert",
+        "img": "./food_store_pic/dessert.jpg",
+        "value": "$25"
+    },
+    {
+        "id": 6,
+        "name": "Noodles",
+        "img": "./food_store_pic/noodles.jpg",
+        "value": "$30"
+    },
+    {
+        "id": 7,
+        "name": "Pasta",
+        "img": "./food_store_pic/pasta.jpg",
+        "value": "$35"
+    },
+    {
+        "id": 8,
+        "name": "Pizza",
+        "img": "./food_store_pic/pizza.jpg",
+        "value": "$39"
+    },
+    {
+        "id": 9,
+        "name": "Salad",
+        "img": "./food_store_pic/salad.jpg",
+        "value": "$10"
+    },
+    {
+        "id": 10,
+        "name": "vegetables",
+        "img": "./food_store_pic/vegetables.jpg",
+        "value": "$20"
+    }
+]
