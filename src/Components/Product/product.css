@@ -6,11 +6,6 @@ img {
   width: 280px;
   background-color: rgb(220, 245, 222);
   border: 1px solid rgb(169, 221, 255);
-  border-radius: 18px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
 }
 
 .img-container {
@@ -20,8 +15,6 @@ img {
 }
 .img-container img {
   outline: none;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
 }
 
 .card-body {
@@ -35,20 +28,19 @@ img {
   display: block;
   width: 100%;
   padding: 0.8rem 0;
-  border-end-start-radius: 18px;
-  border-end-end-radius: 18px;
   border: none;
   outline: none;
   background-color: rgb(66, 230, 203);
   cursor: pointer;
 }
-
+/* Mobile Devices */
 @media (max-width: 400px) {
   .card {
     width: 150px;
   }
 }
 
+/* Limit Range  (min-width: 400px) and (max-width: 576px)*/
 @media (min-width: 400px) and (max-width: 576px) {
   .card {
     width: 220px;

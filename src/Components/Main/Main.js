@@ -4,32 +4,39 @@ import { Modal, Button } from 'react-bootstrap';
 import Product from '../Product/Product';
 
 const Main = () => {
+    // product state
     const [products, setProducts] = useState([]);
+
+    // cart state
     const [addCart, setAddCart] = useState([]);
+
+    // Modal Cart state
     const [addCartModal, setModalCart] = useState([]);
 
-    // console.log(addCartModal);
-    
-     const [show, setShow] = useState(false);
+    // ReactBootstrap state for modal
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    // SideBar added cart function
     const addedCard = ( product ) => {
         let newAddedCard = [...addCart, product]
         setAddCart(newAddedCard);
     }
-
-
+    
+    
+    // Auto Selected function
     const autoSelect = (  ) => {
         let newNumOfCart = addCart[Math.floor(Math.random() * addCart.length)];
-        // console.log(newNumOfCart);
         setModalCart(newNumOfCart);
     }
-
+    
+    // Reset function
     const resetCarts = () => {
         setAddCart([]);
     }
 
+    // Loaded Data
     useEffect(() => {
         fetch('data.json') 
             .then(res => res.json())
@@ -63,18 +70,14 @@ const Main = () => {
 
                 }
 
-                <button className='auto-choose-btn' onClick={() => {autoSelect(); handleShow();}}>Auto Choose</button>
+                <Button className='auto-choose-btn' onClick={() => {autoSelect(); handleShow();}} variant="outline-success">Auto Choose</Button>
                 <br></br>
                 <br></br>
-                <button className='reset-btn' onClick={resetCarts}>Reset</button>
+                <Button className='reset-btn' onClick={resetCarts} variant="outline-danger">Reset</Button>
             </div>
         </div>
 
         <div>
-            
-{        /* <Button variant="primary" onClick={handleShow}>
-            Launch static backdrop modal
-        </Button> */}
 
         <Modal
             show={show}
@@ -103,4 +106,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;
