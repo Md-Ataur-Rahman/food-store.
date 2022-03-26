@@ -42,3 +42,15 @@ img {
   background-color: rgb(66, 230, 203);
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .card {
+    width: 150px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  .card {
+    width: 220px;
+  }
+}
