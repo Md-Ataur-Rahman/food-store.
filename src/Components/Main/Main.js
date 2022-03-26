@@ -26,6 +26,10 @@ const Main = () => {
         setModalCart(newNumOfCart);
     }
 
+    const resetCarts = () => {
+        setAddCart([]);
+    }
+
     useEffect(() => {
         fetch('data.json') 
             .then(res => res.json())
@@ -62,7 +66,7 @@ const Main = () => {
                 <button className='auto-choose-btn' onClick={() => {autoSelect(); handleShow();}}>Auto Choose</button>
                 <br></br>
                 <br></br>
-                <button className='reset-btn'>Reset</button>
+                <button className='reset-btn' onClick={resetCarts}>Reset</button>
             </div>
         </div>
 
