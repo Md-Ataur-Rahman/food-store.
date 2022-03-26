@@ -62,6 +62,9 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.modal-img {
+  height: 300px;
+}
 
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
